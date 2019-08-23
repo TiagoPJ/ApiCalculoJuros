@@ -1,6 +1,6 @@
 # Aplicativo para Calculo de Juros Compostos
 
-Projeto possuí 3 projetos, conforme descrição abaixo:
+Projeto final possuí 3 API ASP.NET Core, conforme descrição abaixo:
 
 ### Api TaxaJuros
 
@@ -15,8 +15,6 @@ Esta API tem como objetivo calcular e retornar um valor X de acordo com 3 parâm
 
 SPA simples em Angular na versão 1.6 aonde é possível informar os valores e ver o retorno do cáculo  <br />
 após consumir as API's citadas acima, bem como receber os dados do projeto no GitHub.
-
-Obs.: Ambos os projetos em .NetCore
 
 ## Como rodar
 
@@ -78,4 +76,4 @@ Os testes unitários das API's foram desenvolvidos com o framework <b>MSTest</b>
 ##### APICalculaJurosXUnitTest / ApiTaxaJurosXUniTest
 
 Os testes de integração das API's foram desenvolvidos com o framework <b>xUnit</b>,  <br />
-os mesmos validam  a requisição HTTP feita para as API's.
+e <b>FluentAssertions</b> os mesmos validam a requisição HTTP feita para as API's. 
