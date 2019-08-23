@@ -1,0 +1,47 @@
+﻿<div class="ui four column doubling stackable grid container" style="height:100%; margin: 0px; padding:0px; float:left;">
+    <div class="column" style="float: left; padding:0px;">
+        <div style="height: 100%;" ng-include="'../includes/menu.html'"></div>
+    </div>
+    <div class="column" style="width:0 auto;">
+        <h2 class="ui header">Bem vindo!</h2>
+        <div class="column" style="width:700px; margin:0 auto;" ng-init="getTaxa()" ng-app="SoftplanApp" ng-controller="TaxaController">
+            <h1>
+                Valor de taxa atual é de <label style="color:red"> {{ valorTaxa }} </label>
+            </h1>
+            <div ng-app="SoftplanApp" ng-init="retornaInformacoesProjeto()" ng-controller="CaculaJurosController" style="width:700px; margin: 0 auto;">
+                <form class="ui form segment" style="width: 100%;">
+                    <div class="ui action input">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label><b>Valor Inicial:</b></label>
+                                </td>
+                                <td>
+                                    <input ng-model="form.valorInicial" required name="valorInicial" type="number" placeholder="Inserir Valor Inicial...">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label><b>Meses:</b></label>
+                                </td>
+                                <td>
+                                    <input ng-model="form.meses" name="meses" type="number" placeholder="Inserir a quantidade de meses...">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="ui primary button" ng-click="calcularValorFinal(valorTaxa)">Calcular</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <br />
+                    <h1 ng-show="IsVisible">
+                        Valor final calculado é <label style="color:aqua"> {{ valorCalculado }} </label>
+                    </h1>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
