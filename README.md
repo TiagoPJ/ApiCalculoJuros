@@ -1,6 +1,6 @@
 # Aplicativo para Calculo de Juros Compostos
 
-Projeto final possuí 3 API ASP.NET Core, conforme descrição abaixo:
+Projeto final possuí 3 API's `ASP.NET Core (Sdk .NET Core 2.2)`, conforme descrição abaixo:
 
 ### Api TaxaJuros
 
