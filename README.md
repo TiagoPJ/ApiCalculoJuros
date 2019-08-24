@@ -49,7 +49,7 @@ docker run -it -d -v "$(pwd)\calculajuros\api".ToLower() -p 5002:80 --rm --name 
 ```
 ### DotNetRun (Caso tenha problema com o Docker)
 
-Pelo terminal entre em cada projeto e execute o comando: `dotnet run`.
+Basta abrir um terminal para cada projeto executar o comando: `dotnet run`.
 
 ### IISExpress (Caso ainda tenha problemas)
 
