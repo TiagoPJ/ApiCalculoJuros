@@ -47,9 +47,9 @@ docker run -it -d -v "$(pwd)\taxajuros\api".ToLower() -p 5001:80 --rm --name api
 ```
 docker run -it -d -v "$(pwd)\calculajuros\api".ToLower() -p 5002:80 --rm --name apicalculajuros-container apicalculajuros-image
 ```
-### DotNetRun (Caso tenha problema com o Docker)
+### DotNet Run (Caso tenha problema com o Docker)
 
-Basta abrir um terminal para cada projeto executar o comando: `dotnet run`.
+Basta abrir um terminal para cada projeto e executar o comando: `dotnet run`.
 
 ### IISExpress (Caso ainda tenha problemas)
 
