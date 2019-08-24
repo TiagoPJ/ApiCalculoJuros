@@ -47,10 +47,15 @@ docker run -it -d -v "$(pwd)\taxajuros\api".ToLower() -p 5001:80 --rm --name api
 ```
 docker run -it -d -v "$(pwd)\calculajuros\api".ToLower() -p 5002:80 --rm --name apicalculajuros-container apicalculajuros-image
 ```
+### DotNetRun (Caso tenha problema com o Docker)
 
-### IISExpress (Caso tenha problema com o Docker)
+Pelo terminal entre em cada projeto e execute o comando: `dotnet run`.
+
+### IISExpress (Caso ainda tenha problemas)
 
 Basta abrir as solutions dos projetos no VS2017 e executar as mesmas.
+
+## Api's em execução
 
 Após estes processos agora basta acessar o endereço local `http://localhost:5000` que a SPA estará rodando,  <br />
 posteriormente acessando as portas 5001 e 5002 é possivel ver o Swagger das aplicações restantes.
