@@ -49,7 +49,11 @@ docker run -it -d -v "$(pwd)\calculajuros\api".ToLower() -p 5002:80 --rm --name 
 ```
 ### DotNet Run (Caso tenha problema com o Docker)
 
-Basta abrir um terminal para cada projeto e executar o comando: `dotnet run`.
+Basta abrir um terminal para cada projeto listado abaixo e executar os comandos: `dotnet restore` e após `dotnet run` para rodar aplicação.
+
+###### `./ApiCalcuoJuros/WebSite`
+###### `./ApiCalcuoJuros/CalculaJuros/Api`
+###### `./ApiCalcuoJuros/TaxaJuros/Api`
 
 ### IISExpress (Caso ainda tenha problemas)
 
